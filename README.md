@@ -4,6 +4,9 @@ Shopify App
 ## Members
 James, Riley, Daniel
 
+## Scrum Artifacts
+https://docs.google.com/spreadsheets/d/1W8RsXhnKqqY7ODa_aBuuRIF6f_MJlCqh/edit#gid=1999516863
+
 ## For Users:
 This Shopify App allows merchants to create incremental pricing upgrades or "add-ons" to items in their Shopify store, avoiding the need to manually create each price combination in their own store. The customer will see the total cost updated automatically, and receive 1 item in their cart showing the combined price.
 
