@@ -2,7 +2,7 @@
 Shopify App
 
 ## Members
-James, Riley, Daniel
+Daniel (danel2233), James (nwjm), Riley (Riley-Zlater)
 
 ## Scrum Artifacts
 https://docs.google.com/spreadsheets/d/1W8RsXhnKqqY7ODa_aBuuRIF6f_MJlCqh/edit#gid=1999516863
