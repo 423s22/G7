@@ -1,0 +1,43 @@
+
+body{
+    background-color: aliceblue;
+}
+
+hr{
+background-color: black;
+height: 7px;
+}
+h1{
+    color: forestgreen;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-family: monospace;   
+}
+
+button{
+    
+}
+#firstBox{
+    width: 200px;
+  border: 10px solid black;
+  padding: 50px;
+  margin: 25px;
+    background-color: lightsteelblue
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#ran{
+   position: absolute;
+    bottom: 1;
+    left:1;
+    font-size: 20px;
+    color:darkgreen;
+    font-family:monospace;
+}
+

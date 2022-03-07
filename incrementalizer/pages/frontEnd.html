@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+<!--- external css and html for now, can change later ---> 
+<link rel="stylesheet" href="Editor.css">
+<h1>Shopify Extension</h1> 
+    <hr>
+<script src = "index.js"></script>
+
+<!--- Skeleton button, generates rand Num for now --->
+    <p>Click Below to show Cost Calculated</p>
+    
+    
+    <script>
+function rngInt(x,y) {
+    return Math.floor(Math.random() * (x-y)+1 ) + y;   
+   }
+    </script> 
+<!--- Image goes here, insert whatever we need --->
+<div id = "firstBox"> <img src ="whiteShirt.jpg" alt="White Shirt"> 
+    <p  id="ran"></p>   
+    </div>
+    
+    <button onclick = "document.getElementById('ran').innerHTML = rngInt(1,100)">Calculate </button>
+    
+</body> 
+</html> 
