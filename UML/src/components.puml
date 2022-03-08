@@ -1,0 +1,22 @@
+@startuml components
+!theme plain
+
+[React App] as frontend
+[Server] as server
+[Database] as db
+[Shopify] as shopify
+
+interface "Admin API" as admin
+interface "GraphQL" as graphql
+interface "HTTP" as http
+
+frontend --> http
+
+http -- server
+server -> graphql
+server --> admin
+
+graphql - db
+admin -- shopify
+
+@enduml
