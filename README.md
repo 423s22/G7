@@ -24,4 +24,8 @@ You can clone this repository and run the application on your own development st
     `shopify app serve`
 6. This will create an installation link to install the application in your Development Store.
 
+## UML Diagrams Made with PlantUML:
+
+PlantUML Documentation can be [found here](https://plantuml.com/starting).
+
 
