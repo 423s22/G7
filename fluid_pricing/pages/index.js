@@ -39,14 +39,19 @@ const Index = () => {
             alt="Samurai Shirt"
           />
           <p>
-            Shirt Color
+              Shirt Color
     </p>
-          <ButtonGroup segmented>
-            <Button>Black</Button>
-            <Button>White</Button>
-            <Button>Gray</Button>
-          </ButtonGroup>
-        </Card.Section>
+            <ButtonGroup segmented>
+              <Button>Black</Button>
+              <Button>White</Button>
+              <Button>Gray</Button>
+            </ButtonGroup>
+          </Card.Section>
+
+          <Card.Section>
+          <TextStyle varation="strong"> Total </TextStyle>
+          </Card.Section>
+        </Card>
       </Layout.Section>
     </Layout>;
   </Page>;
