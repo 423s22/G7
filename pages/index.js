@@ -1,10 +1,9 @@
 import React from "react";
 import { Page } from "@shopify/polaris";
-import { Provider, ResourcePicker } from "@shopify/app-bridge-react";
+import { ResourcePicker } from "@shopify/app-bridge-react";
 
 class Index extends React.Component {
   state = { open: false }
-  config = { apikey: 'f5f68cf74685b14c4453df7c33ad0c0c', host: 'https://fluid-pricing.herokuapp.com/' };
   render() {
     return (
       <Page
@@ -14,12 +13,10 @@ class Index extends React.Component {
           onAction: () => this.setState({open: true})
         }}
       >
-        <Provider config={config}>
-          <ResourcePicker 
-            resourceType='Product'
-            open={this.state.open}
-          />
-        </Provider> 
+        <ResourcePicker 
+          resourceType='Product'
+          open={this.state.open}
+        />
       </Page>
     )
   }
