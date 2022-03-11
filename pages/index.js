@@ -1,3 +1,4 @@
+import { React } from 'react';
 import { Page } from "@shopify/polaris";
 import { ResourcePicker } from "@shopify/app-bridge-react";
 
