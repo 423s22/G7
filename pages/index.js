@@ -5,13 +5,12 @@ class Index extends React.Component {
   render() {
     return (
       <Page
-      fullWidth
-      title="Products"
-      primaryAction={{
-        content: "Select Products",
-        onAction: () => console.log("Hello")
-      }}
-    />
+        title="Products"
+        primaryAction={{
+          content: "Select Products",
+          onAction: () => console.log("Hello")
+        }}
+      />
     )
   }
 }
