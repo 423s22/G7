@@ -1,9 +1,14 @@
 import React from "react";
+import ReactDOM from 'react-dom';
 import { Page } from "@shopify/polaris";
 import { ResourcePicker } from "@shopify/app-bridge-react";
 
 class Index extends React.Component {
-  state = { open: false }
+  constructor(props) {
+    super(props);
+    this.state = { open: false };
+  }
+
 
   render() {
     return (
@@ -11,10 +16,10 @@ class Index extends React.Component {
         title="Products"
         primaryAction={{
           content: "Select Products",
-          onAction: () => this.setState({open: true})
+          onAction: () => console.log("Hello") //this.setState({open: true})
         }}
-      >
-      </Page>
+      />
+      //</Page>
     )
   }
 }
