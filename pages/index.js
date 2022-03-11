@@ -1,23 +1,17 @@
-import { Heading, Page } from "@shopify/polaris";
+import { Page } from "@shopify/polaris";
 
-export default function Index() {
-  return (
+const Index = () => (
     <Page
     fullWidth
     title="Products"
     primaryAction={{
       content: "Select Products",
       onAction: () => console.log("Hello")
-    }}>
-      <Heading>
-        Shopify app with Node and React{" "}
-        <span role="img" aria-label="tada emoji">
-          🎉
-        </span>
-      </Heading>
-    </Page>
-  );
-}
+    }}
+  />
+);
+
+export default Index;
 /* 
 import React from 'react';
 import { Page } from "@shopify/polaris";
