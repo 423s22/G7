@@ -1,36 +1,39 @@
-# ESOF 423 Group 7
-Shopify App
+# Shopify App Node
 
-## Members
-Daniel Vinogradov (danel2233), James Marsh (nwjm), Riley Slater (Riley-Zlater)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.md)
+[![Build Status](https://travis-ci.com/Shopify/shopify-app-node.svg?branch=master)](https://travis-ci.com/Shopify/shopify-app-node)
 
-## Scrum Artifacts
-https://docs.google.com/spreadsheets/d/1W8RsXhnKqqY7ODa_aBuuRIF6f_MJlCqh/edit#gid=1999516863
+Boilerplate to create an embedded Shopify app made with Node, [Next.js](https://nextjs.org/), [Shopify-koa-auth](https://github.com/Shopify/quilt/tree/master/packages/koa-shopify-auth), [Polaris](https://github.com/Shopify/polaris-react), and [App Bridge React](https://shopify.dev/tools/app-bridge/react-components).
 
-## For Users:
-This Shopify App allows merchants to create incremental pricing upgrades or "add-ons" to items in their Shopify store, avoiding the need to manually create each price combination in their own store. The customer will see the total cost updated automatically, and receive 1 item in their cart showing the combined price.
+## Installation
 
-Application is still in development & not yet released on the Shopify App Store. Example usage can be found at our [Test Store](https://6rqueqozx1qtycs5-62796234997.shopifypreview.com/)
+Using the [Shopify CLI](https://github.com/Shopify/shopify-cli) run:
 
-## For Developers:
-You can clone this repository and run the application on your own development store:
+```sh
+~/ $ shopify app create node -n APP_NAME
+```
 
-1. Install Shopify CLI, Node.js, npm, and Ruby
-2. Log in to your Partner Account with the command `shopify login` inside this directory
-3. Create an ngrok account and auth token, documentation [here](https://ngrok.com/docs#config)
-4. Authenticate with ngrok using your newly created token:
-    `shopify app tunnel auth <token>`
-5. Start the server:
-    `shopify app serve`
-6. This will create an installation link to install the application in your Development Store.
+Or, fork and clone repo
 
-### Heroku For Developers:
-To deploy the app and have it hosted we are using Heroku as it has built in functionality with the Shopify CLI.
+## Requirements
 
-1. Install Shopify CLI, Node.js, npm, and Ruby
-2. Log in to your Partner Account with the command `shopify login` inside this directory
-3. Start the server:
-    `shopify app deploy heroku`
-4. Make sure to update the Heroku config vars with the contents of the .env file
+- If you don’t have one, [create a Shopify partner account](https://partners.shopify.com/signup).
+- If you don’t have one, [create a Development store](https://help.shopify.com/en/partners/dashboard/development-stores#create-a-development-store) where you can install and test your app.
+- In the Partner dashboard, [create a new app](https://help.shopify.com/en/api/tools/partner-dashboard/your-apps#create-a-new-app). You’ll need this app’s API credentials during the setup process.
 
+## Usage
 
+This repository is used by [Shopify CLI](https://github.com/Shopify/shopify-cli) as a scaffold for Node apps. You can clone or fork it yourself, but it’s faster and easier to use Shopify App CLI, which handles additional routine development tasks for you.
+
+## Updates
+
+### [Coming soon] Replace Next.js and Koa with Express.js
+
+We will be moving to [Express](https://expressjs.com/) to keep Shopify's framework usage consistent.
+Our sample app currently uses both Koa and Next.js which makes the server-side unnecessarily complex to use and maintain.
+
+Try it out with this command, understanding that things may not be totally stable yet: `npx degit shopify/shopify-app-node#sample_app_updates`.
+
+## License
+
+This repository is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

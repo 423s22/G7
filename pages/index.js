@@ -8,7 +8,7 @@ const Index = () => {
       
 
       <Layout.Section oneHalf>
-        //first layout section
+        
         <Card title="Basic Shirt">
           <Card.Section>
             <Thumbnail
@@ -33,7 +33,6 @@ const Index = () => {
       </Layout.Section>
 
 
-      /*Second Layout Section, ill use oneHalf method to make 2 separate sections */
       <Layout.Section oneHalf>
         <Card title = "Samurai Shirt">
         <Card.Section>
