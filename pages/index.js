@@ -1,6 +1,6 @@
-import { Page } from "@shopify/polaris";
-import { ResourcePicker } from "@shopify/app-bridge-react";
 import React from "react";
+import { Page } from "@shopify/polaris";
+import { Provider, ResourcePicker } from "@shopify/app-bridge-react";
 
 class Index extends React.Component {
   state = { open: false }
