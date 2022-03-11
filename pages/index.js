@@ -4,6 +4,11 @@ import { ResourcePicker } from "@shopify/app-bridge-react";
 
 class Index extends React.Component {
   state = { open: false }
+
+  pickProducts() {
+    
+  }
+
   render() {
     return (
       <Page
@@ -13,10 +18,7 @@ class Index extends React.Component {
           onAction: () => this.setState({open: true})
         }}
       >
-        <ResourcePicker 
-          resourceType='Product'
-          open={this.state.open}
-        />
+        <ResourcePicker resourceType='Product' open />
       </Page>
     )
   }
