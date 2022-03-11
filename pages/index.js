@@ -1,3 +1,18 @@
+import { Heading, Page } from "@shopify/polaris";
+
+export default function Index() {
+  return (
+    <Page>
+      <Heading>
+        Shopify app with Node and React{" "}
+        <span role="img" aria-label="tada emoji">
+          🎉
+        </span>
+      </Heading>
+    </Page>
+  );
+}
+/* 
 import React from 'react';
 import { Page } from "@shopify/polaris";
 import { ResourcePicker } from "@shopify/app-bridge-react";
@@ -30,7 +45,7 @@ class Index extends React.Component {
 }
 
 export default Index;
-
+ */
 /* import React from 'react';
 
 import { Page , Layout , Card, TextStyle, Thumbnail, Button, ButtonGroup} from "@shopify/polaris";
