@@ -4,6 +4,7 @@ import React from "react";
 
 class Index extends React.Component {
   state = { open: false }
+  config = { apikey: 'f5f68cf74685b14c4453df7c33ad0c0c', host: 'https://fluid-pricing.herokuapp.com/' };
   render() {
     return (
       <Page
@@ -13,10 +14,12 @@ class Index extends React.Component {
           onAction: () => this.setState({open: true})
         }}
       >
-        <ResourcePicker 
-          resourceType='Product'
-          open={this.state.open}
-        />
+        <Provider config={config}>
+          <ResourcePicker 
+            resourceType='Product'
+            open={this.state.open}
+          />
+        </Provider> 
       </Page>
     )
   }
@@ -24,6 +27,7 @@ class Index extends React.Component {
 
 
 export default Index;
+
 /* 
 import React from 'react';
 import { Page } from "@shopify/polaris";
