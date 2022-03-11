@@ -4,7 +4,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 class Index extends React.Component {
-  state = { open: false, rows: [] };
+  constructor(props) {
+    super(props);
+    this.state = { open: false, rows: [] };
+  }
   // config = {apiKey: API_KEY, host: host}
   render() {
     return (
