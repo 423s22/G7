@@ -9,14 +9,13 @@ class Index extends React.Component {
     this.state = { open: false };
   }
 
-
   render() {
     return (
       <Page
         title="Products"
         primaryAction={{
           content: "Select Products",
-          onAction: () => console.log("Hello") //this.setState({open: true})
+          onAction: () => this.setState({open: true})
         }}
       />
       //</Page>
