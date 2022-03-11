@@ -1,15 +1,20 @@
 import { Page } from "@shopify/polaris";
+import React from "react";
 
-const Index = () => (
-    <Page
-    fullWidth
-    title="Products"
-    primaryAction={{
-      content: "Select Products",
-      onAction: () => console.log("Hello")
-    }}
-  />
-);
+class Index extends React.Component {
+  render() {
+    return (
+      <Page
+      fullWidth
+      title="Products"
+      primaryAction={{
+        content: "Select Products",
+        onAction: () => console.log("Hello")
+      }}
+    />
+    )
+  }
+}
 
 export default Index;
 /* 
