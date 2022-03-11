@@ -33,7 +33,7 @@ class Index extends React.Component {
       </Page>
     );
   }
-  handleSelection = (resources) => {
+  handleSelection(resources) {
     console.log(resources);
     const idFromResources = resources.selection.map((product) => [
       product.handle,
@@ -42,7 +42,7 @@ class Index extends React.Component {
     this.setState({ open: false });
     this.setState({ rows: idFromResources });
     console.log(idFromResources);
-  };
+  }
 }
 
 export default Index;
