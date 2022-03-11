@@ -26,7 +26,7 @@ class Index extends React.Component {
       </Page>
     )
   }
-  handleSelection = (resources) => {
+  handleSelection(resources) {
     this.setState({open: false})
     console.log(resources);
   }
