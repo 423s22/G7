@@ -1,0 +1,10 @@
+@startuml react
+!theme plain
+
+App *-- Button1
+App *-- Button2
+App *-- Button3
+App *-- Button4
+
+
+@enduml
