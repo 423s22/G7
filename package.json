@@ -49,6 +49,7 @@
   },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-stage-3": "^7.0.0",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
@@ -73,6 +74,6 @@
   "lint-staged": {
     "*.{js,css,json,md}": [
       "prettier --write"
-    ]
+    ]   
   }
 }
