@@ -22,7 +22,7 @@ class Index extends React.Component {
   render() {
     return (
       <Page>
-    
+        <p>Hello there</p>
       </Page>
     );
   }
