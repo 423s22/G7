@@ -4,6 +4,7 @@ import React from 'react';
 import { Page } from '@shopify/polaris';
 import {shallow, mount} from 'enzyme';
 
+import './matchMedia.mock';
 import Index from '../index';
 
 configure({adapter: new Adapter()});

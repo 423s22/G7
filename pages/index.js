@@ -1,4 +1,4 @@
-import { DataTable, Page } from "@shopify/polaris";
+import { AppProvider, DataTable, Page } from "@shopify/polaris";
 import {
   Layout,
   Card,
@@ -21,9 +21,13 @@ class Index extends React.Component {
   // config = {apiKey: API_KEY, host: host}
   render() {
     return (
-      <Page>
-        <p>Hello there</p>
-      </Page>
+      <AppProvider>
+        <Page
+        title="Welcome to fluid pricing"
+        >
+          
+        </Page>
+      </AppProvider>
     );
   }
 }
