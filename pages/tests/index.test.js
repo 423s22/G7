@@ -9,6 +9,6 @@ import { mountWithAppProvider } from './utils/enzyme';
 
 configure({adapter: new Adapter()});
 it('renders page', () => {
-    const wrapper = mountWithAppProvider(<Index />);
+    const wrapper = mount(<Index />);
     expect(wrapper.find(Page).exists()).toBe(true);
 });
