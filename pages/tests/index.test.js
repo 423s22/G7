@@ -2,6 +2,7 @@ import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import { configure } from 'enzyme';
 import React from 'react';
 import { Page } from '@shopify/polaris';
+import {shallow, mount} from 'enzyme';
 
 import Index from '../index';
 
