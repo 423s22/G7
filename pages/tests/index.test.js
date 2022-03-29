@@ -6,8 +6,6 @@ import {shallow, mount} from 'enzyme';
 
 import Index from '../index';
 
-import { mountWithAppProvider } from './utils/enzyme';
-
 configure({adapter: new Adapter()});
 it('renders page', () => {
     const wrapper = mount(<Index />);
