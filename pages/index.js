@@ -1,17 +1,8 @@
-import { AppProvider, DataTable, Page } from "@shopify/polaris";
-import {
-  Layout,
-  Card,
-  TextStyle,
-  Thumbnail,
-  Button,
-  ButtonGroup,
-  ResourcePicker,
-  Provider,
-  Modal
-} from "@shopify/app-bridge-react";
+import { AppProvider, Button, Page } from "@shopify/polaris";
+import { ResourcePicker } from "@shopify/app-bridge-react";
+
 import React from "react";
-import ReactDOM from "react-dom";
+
 
 class Index extends React.Component {
   constructor(props) {
@@ -26,11 +17,28 @@ class Index extends React.Component {
         title="Welcome to fluid pricing"
         subtitle="The greatest way to increment your pricing."
         >
-          <Button fullWidth>Add customer</Button>
-          
+          <Button 
+          fullWidth
+          onClick={() => this.setState({ open: true })}
+          >
+            Select a Product
+          </Button>
+
+        
+
         </Page>
       </AppProvider>
     );
+  }
+  handleSelection(resources) {
+    console.log(resources);
+    const idFromResources = resources.selection.map((product) => [
+      product.handle,
+      product.id
+    ]);
+    this.setState({ open: false });
+    this.setState({ rows: idFromResources });
+    console.log(idFromResources);
   }
 }
 
