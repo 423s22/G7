@@ -24,7 +24,9 @@ class Index extends React.Component {
       <AppProvider>
         <Page
         title="Welcome to fluid pricing"
+        subtitle="The greatest way to increment your pricing."
         >
+          <Button fullWidth>Add customer</Button>
           
         </Page>
       </AppProvider>
