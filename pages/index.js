@@ -14,17 +14,17 @@ class Index extends React.Component {
     return (
       <AppProvider>
         <Page
-        title="Welcome to fluid pricing"
-        subtitle="The greatest way to increment your pricing."
+          title="Welcome to fluid pricing"
+          subtitle="The greatest way to increment your pricing."
         >
-          <Button 
-          fullWidth
-          onClick={() => this.setState({ open: true })}
+          <Button
+            fullWidth
+            onClick={() => this.setState({ open: true })}
           >
             Select a Product
           </Button>
 
-        
+        // add ResourcePicker here
 
         </Page>
       </AppProvider>
